@@ -5,6 +5,8 @@ node_modules/
 dist/
 .output/
 .nuxt/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
 
 # Firebase
 .firebase/
