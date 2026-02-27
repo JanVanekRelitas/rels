@@ -10,7 +10,10 @@ COPY package.json pnpm-workspace.yaml pnpm-lock.yaml tsconfig.base.json ./
 COPY app/package.json app/
 COPY shared/package.json shared/
 COPY functions/package.json functions/
+COPY e2e/package.json e2e/
 
+# Skip Playwright browser download during install
+ENV PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
 RUN pnpm install --frozen-lockfile
 
 COPY shared/ shared/

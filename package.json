@@ -12,7 +12,9 @@
     "migrate": "tsx scripts/migrate-numbers.ts",
     "migrate:dry": "tsx scripts/migrate-numbers.ts --dry-run",
     "migrate:emulator": "tsx scripts/migrate-numbers.ts --emulator",
-    "seed": "tsx scripts/seed-lookups.ts"
+    "seed": "tsx scripts/seed-lookups.ts",
+    "test:e2e": "pnpm --filter @rels/e2e test",
+    "test:e2e:smoke": "pnpm --filter @rels/e2e test:smoke"
   },
   "engines": {
     "node": ">=22.0.0",

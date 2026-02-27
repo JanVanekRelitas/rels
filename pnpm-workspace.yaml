@@ -2,3 +2,4 @@ packages:
   - app
   - functions
   - shared
+  - e2e

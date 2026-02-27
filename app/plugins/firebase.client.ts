@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth, connectAuthEmulator } from 'firebase/auth';
+import { getAuth, connectAuthEmulator, browserLocalPersistence, setPersistence } from 'firebase/auth';
 import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore';
 import { getStorage, connectStorageEmulator } from 'firebase/storage';
 
@@ -11,6 +11,11 @@ export default defineNuxtPlugin(() => {
   const auth = getAuth(firebaseApp);
   const firestore = getFirestore(firebaseApp);
   const storage = getStorage(firebaseApp);
+
+  // Use localStorage persistence in E2E mode so Playwright storageState captures tokens
+  if (config.public.e2e) {
+    setPersistence(auth, browserLocalPersistence);
+  }
 
   // Connect to emulators in development
   if (import.meta.dev) {
