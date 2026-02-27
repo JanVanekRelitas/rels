@@ -59,7 +59,7 @@ pnpm test:e2e:smoke       # run smoke tests only
 
 ## Documentation
 
-User manual is available at **[GitHub Pages](https://janvanekrelitas.github.io/rels/)** (Czech + English).
+**[janvanekrelitas.github.io/rels/cs/](https://janvanekrelitas.github.io/rels/cs/)** (Czech + English)
 
 To run locally: `pnpm docs:dev`
 
