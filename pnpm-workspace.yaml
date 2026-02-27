@@ -3,3 +3,4 @@ packages:
   - functions
   - shared
   - e2e
+  - docs
