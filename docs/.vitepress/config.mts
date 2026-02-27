@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/rels/',
   title: 'RELS',
   description: 'Real Estate Legal Solutions — Uživatelská příručka',
 
@@ -73,7 +74,7 @@ export default defineConfig({
 
   themeConfig: {
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-org/rels' },
+      { icon: 'github', link: 'https://github.com/JanVanekRelitas/rels' },
     ],
   },
 })
