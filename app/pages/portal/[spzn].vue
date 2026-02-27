@@ -13,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <UDashboardPanel>
+  <UDashboardPanel grow>
     <template #header>
       <UDashboardNavbar>
         <template #left>

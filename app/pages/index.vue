@@ -22,20 +22,18 @@ const phases = ['rezervace', 'zpracovani', 'finalizace', 'uschova', 'katastr', '
 </script>
 
 <template>
-  <UDashboardPanel>
-    <template #header>
-      <UDashboardNavbar :title="t('dashboard.title')">
-        <template #right>
-          <UButton :label="t('deal.new')" icon="i-lucide-plus" to="/deals/new" />
-          <UButton
-            :label="uiStore.showArchived ? 'Aktivní' : 'Archiv'"
-            variant="ghost"
-            icon="i-lucide-archive"
-            @click="uiStore.toggleArchived()"
-          />
-        </template>
-      </UDashboardNavbar>
-    </template>
+  <UDashboardPanel grow>
+    <UDashboardNavbar :title="t('dashboard.title')">
+      <template #right>
+        <UButton :label="t('deal.new')" icon="i-lucide-plus" to="/deals/new" />
+        <UButton
+          :label="uiStore.showArchived ? 'Aktivní' : 'Archiv'"
+          variant="ghost"
+          icon="i-lucide-archive"
+          @click="uiStore.toggleArchived()"
+        />
+      </template>
+    </UDashboardNavbar>
 
     <div v-if="dealsStore.loading" class="flex items-center justify-center p-12">
       <UIcon name="i-lucide-loader-2" class="animate-spin h-8 w-8" />

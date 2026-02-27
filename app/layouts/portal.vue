@@ -3,12 +3,15 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <UDashboardLayout>
-    <UDashboardPanel>
+  <UDashboardGroup>
+    <UDashboardSidebar
+      collapsible
+      :default-size="15"
+      :min-size="10"
+      :max-size="25"
+    >
       <template #header>
-        <UDashboardSidebarHeader>
-          <span class="text-lg font-bold">RELS — {{ t('portal.title') }}</span>
-        </UDashboardSidebarHeader>
+        <span class="text-lg font-bold truncate">RELS — {{ t('portal.title') }}</span>
       </template>
 
       <UNavigationMenu
@@ -17,8 +20,8 @@ const { t } = useI18n();
         ]"
         orientation="vertical"
       />
-    </UDashboardPanel>
+    </UDashboardSidebar>
 
     <slot />
-  </UDashboardLayout>
+  </UDashboardGroup>
 </template>

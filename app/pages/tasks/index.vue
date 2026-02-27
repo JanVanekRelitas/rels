@@ -24,7 +24,7 @@ const columns = [
 </script>
 
 <template>
-  <UDashboardPanel>
+  <UDashboardPanel grow>
     <template #header>
       <UDashboardNavbar :title="t('nav.tasks')">
         <template #right>

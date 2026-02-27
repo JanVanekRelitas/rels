@@ -56,28 +56,31 @@ const navigation = computed(() => [
 </script>
 
 <template>
-  <UDashboardLayout>
-    <UDashboardPanel>
+  <UDashboardGroup>
+    <UDashboardSidebar
+      collapsible
+      resizable
+      :default-size="15"
+      :min-size="10"
+      :max-size="25"
+    >
       <template #header>
-        <UDashboardSidebarHeader>
-          <span class="text-lg font-bold">RELS</span>
-        </UDashboardSidebarHeader>
+        <span class="text-lg font-bold truncate">RELS</span>
       </template>
 
       <UNavigationMenu :items="navigation" orientation="vertical" />
 
       <template #footer>
-        <UDashboardSidebarFooter>
-          <UButton
-            icon="i-lucide-settings"
-            variant="ghost"
-            :to="'/admin'"
-            :label="t('nav.admin')"
-          />
-        </UDashboardSidebarFooter>
+        <UButton
+          icon="i-lucide-settings"
+          variant="ghost"
+          :to="'/admin'"
+          :label="t('nav.admin')"
+          block
+        />
       </template>
-    </UDashboardPanel>
+    </UDashboardSidebar>
 
     <slot />
-  </UDashboardLayout>
+  </UDashboardGroup>
 </template>

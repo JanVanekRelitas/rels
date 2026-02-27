@@ -5,7 +5,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <UDashboardPanel>
+  <UDashboardPanel grow>
     <template #header>
       <UDashboardNavbar :title="t('nav.admin')" />
     </template>

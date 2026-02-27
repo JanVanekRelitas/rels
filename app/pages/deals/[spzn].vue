@@ -23,7 +23,7 @@ const activeTab = ref('overview');
 </script>
 
 <template>
-  <UDashboardPanel>
+  <UDashboardPanel grow>
     <template #header>
       <UDashboardNavbar>
         <template #left>

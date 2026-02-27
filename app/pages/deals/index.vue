@@ -27,7 +27,7 @@ const filteredDeals = computed(() => {
 </script>
 
 <template>
-  <UDashboardPanel>
+  <UDashboardPanel grow>
     <template #header>
       <UDashboardNavbar :title="t('nav.deals')">
         <template #right>

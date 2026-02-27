@@ -37,7 +37,7 @@ const tabs = [
 </script>
 
 <template>
-  <UDashboardPanel>
+  <UDashboardPanel grow>
     <template #header>
       <UDashboardNavbar :title="t('registry.title')" />
     </template>

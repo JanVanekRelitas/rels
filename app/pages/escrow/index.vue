@@ -14,7 +14,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <UDashboardPanel>
+  <UDashboardPanel grow>
     <template #header>
       <UDashboardNavbar :title="t('escrow.title')" />
     </template>

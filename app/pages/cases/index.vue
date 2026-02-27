@@ -27,7 +27,7 @@ const filteredCases = computed(() => {
 </script>
 
 <template>
-  <UDashboardPanel>
+  <UDashboardPanel grow>
     <template #header>
       <UDashboardNavbar :title="t('nav.cases')">
         <template #right>
