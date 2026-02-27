@@ -8,10 +8,20 @@
     "build": "pnpm --filter app build",
     "preview": "pnpm --filter app preview",
     "lint": "pnpm -r lint",
-    "typecheck": "pnpm -r typecheck"
+    "typecheck": "pnpm -r typecheck",
+    "migrate": "tsx scripts/migrate-numbers.ts",
+    "migrate:dry": "tsx scripts/migrate-numbers.ts --dry-run",
+    "migrate:emulator": "tsx scripts/migrate-numbers.ts --emulator",
+    "seed": "tsx scripts/seed-lookups.ts"
   },
   "engines": {
     "node": ">=22.0.0",
     "pnpm": ">=10.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.7.0"
   }
 }

@@ -14,6 +14,10 @@ dist/
 .env.*
 !.env.example
 
+# Service account keys (NEVER commit)
+service-account-key.json
+*-service-account*.json
+
 # IDE
 .vscode/
 .idea/
