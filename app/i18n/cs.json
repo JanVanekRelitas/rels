@@ -1,0 +1,143 @@
+{
+  "app": {
+    "name": "RELS",
+    "fullName": "Real Estate Legal Solutions"
+  },
+  "nav": {
+    "dashboard": "Přehled",
+    "deals": "Obchody",
+    "cases": "Kauzy",
+    "tasks": "Úkoly",
+    "cadastral": "Katastr",
+    "escrow": "Úschovy",
+    "contacts": "Subjekty",
+    "finance": "Finance",
+    "attendance": "Docházka",
+    "registry": "Registry",
+    "admin": "Nastavení"
+  },
+  "portal": {
+    "title": "Klientský portál",
+    "myDeals": "Moje případy"
+  },
+  "dashboard": {
+    "title": "Realitní obchody",
+    "activeDeals": "Aktivní obchody",
+    "pendingTasks": "Nedokončené úkoly",
+    "upcomingDeadlines": "Blížící se lhůty",
+    "escrowBalance": "Úschovy — zůstatky"
+  },
+  "deal": {
+    "title": "Obchod",
+    "spzn": "SP.ZN.",
+    "nazev": "Název",
+    "klient": "Klient",
+    "typ": "Typ",
+    "phases": "Fáze",
+    "overview": "Přehled",
+    "payments": "Platby",
+    "escrow": "Úschova",
+    "cadastral": "Katastr",
+    "documents": "Dokumenty",
+    "notes": "Poznámky",
+    "new": "Nový obchod",
+    "archive": "Archivovat"
+  },
+  "phase": {
+    "rezervace": "Rezervace",
+    "zpracovani": "Zpracování",
+    "finalizace": "Finalizace",
+    "uschova": "Úschova",
+    "katastr": "Katastr",
+    "vyplaceni": "Vyplacení",
+    "dokonceni": "Dokončení"
+  },
+  "case": {
+    "title": "Advokátní kauza",
+    "pripad": "Případ",
+    "stav": "Aktuální stav",
+    "new": "Nová kauza"
+  },
+  "task": {
+    "title": "Úkol",
+    "ukol": "Úkol",
+    "odhad": "Odhad",
+    "realnyTime": "Reálný čas",
+    "datum": "Datum",
+    "urgent": "Urgentní",
+    "lhuta": "Lhůta",
+    "poznamka": "Poznámka",
+    "new": "Nový úkol",
+    "status": {
+      "pending": "Čeká",
+      "in_progress": "Probíhá",
+      "done": "Hotovo"
+    }
+  },
+  "contact": {
+    "title": "Subjekt",
+    "jmeno": "Jméno",
+    "typ": "Typ",
+    "rc": "Rodné číslo",
+    "ico": "IČO",
+    "adresa": "Adresa",
+    "telefon": "Telefon",
+    "email": "E-mail",
+    "datovka": "Datová schránka",
+    "new": "Nový subjekt"
+  },
+  "finance": {
+    "title": "Finance",
+    "incoming": "Příchozí platby",
+    "outgoing": "Odchozí platby",
+    "amount": "Částka",
+    "date": "Datum"
+  },
+  "escrow": {
+    "title": "Úschovy",
+    "account": "Účet",
+    "balance": "Zůstatek"
+  },
+  "cadastral": {
+    "title": "Katastrální řízení",
+    "cisloRizeni": "Číslo řízení",
+    "stav": "Stav",
+    "lhuta": "Lhůta"
+  },
+  "attendance": {
+    "title": "Docházka",
+    "prichod": "Příchod",
+    "odchod": "Odchod",
+    "hodiny": "Hodiny",
+    "mesicniHodiny": "Měsíční hodiny",
+    "sazba": "Sazba",
+    "celkem": "Celkem"
+  },
+  "registry": {
+    "title": "Registry",
+    "ares": "ARES — Obchodní rejstřík",
+    "ruian": "RUIAN — Adresní místa",
+    "katastr": "Katastr nemovitostí"
+  },
+  "common": {
+    "save": "Uložit",
+    "cancel": "Zrušit",
+    "delete": "Smazat",
+    "edit": "Upravit",
+    "search": "Hledat",
+    "filter": "Filtr",
+    "loading": "Načítání...",
+    "noResults": "Žádné výsledky",
+    "confirm": "Potvrdit",
+    "back": "Zpět",
+    "yes": "Ano",
+    "no": "Ne"
+  },
+  "auth": {
+    "login": "Přihlášení",
+    "logout": "Odhlásit",
+    "email": "E-mail",
+    "password": "Heslo",
+    "signIn": "Přihlásit se"
+  }
+}

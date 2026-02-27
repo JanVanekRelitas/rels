@@ -1,0 +1,69 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper: check authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Helper: check role
+    function hasRole(role) {
+      return isAuthenticated() && request.auth.token.role == role;
+    }
+
+    // Helper: is staff (lawyer or assistant)
+    function isStaff() {
+      return hasRole('lawyer') || hasRole('assistant');
+    }
+
+    // Helper: is client with access to a specific deal
+    function isLinkedClient(spzn) {
+      return hasRole('client') && spzn in request.auth.token.linkedDeals;
+    }
+
+    // Deals collection
+    match /deals/{spzn} {
+      allow read: if isStaff() || isLinkedClient(spzn);
+      allow write: if isStaff();
+
+      // Subcollections: payments, escrow, cadastral, documents, timeline
+      match /{subcollection}/{docId} {
+        allow read: if isStaff() || isLinkedClient(spzn);
+        allow write: if isStaff();
+      }
+    }
+
+    // Cases collection
+    match /cases/{spzn} {
+      allow read, write: if isStaff();
+    }
+
+    // Tasks collection
+    match /tasks/{taskId} {
+      allow read, write: if isStaff();
+    }
+
+    // Contacts collection
+    match /contacts/{contactId} {
+      allow read, write: if isStaff();
+    }
+
+    // Escrow accounts
+    match /escrowAccounts/{accountId} {
+      allow read, write: if isStaff();
+    }
+
+    // Attendance
+    match /attendance/{monthId}/{userId} {
+      allow read, write: if isStaff();
+    }
+
+    // Lookups (read-only for all authenticated, write for lawyer)
+    match /lookups/{type} {
+      allow read: if isAuthenticated();
+      allow write: if hasRole('lawyer');
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "app": {
+    "name": "RELS",
+    "fullName": "Real Estate Legal Solutions"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "deals": "Deals",
+    "cases": "Cases",
+    "tasks": "Tasks",
+    "cadastral": "Cadastral",
+    "escrow": "Escrow",
+    "contacts": "Contacts",
+    "finance": "Finance",
+    "attendance": "Attendance",
+    "registry": "Registry",
+    "admin": "Settings"
+  },
+  "portal": {
+    "title": "Client Portal",
+    "myDeals": "My Cases"
+  },
+  "dashboard": {
+    "title": "Real Estate Deals",
+    "activeDeals": "Active Deals",
+    "pendingTasks": "Pending Tasks",
+    "upcomingDeadlines": "Upcoming Deadlines",
+    "escrowBalance": "Escrow Balances"
+  },
+  "deal": {
+    "title": "Deal",
+    "spzn": "File No.",
+    "nazev": "Name",
+    "klient": "Client",
+    "typ": "Type",
+    "phases": "Phases",
+    "overview": "Overview",
+    "payments": "Payments",
+    "escrow": "Escrow",
+    "cadastral": "Cadastral",
+    "documents": "Documents",
+    "notes": "Notes",
+    "new": "New Deal",
+    "archive": "Archive"
+  },
+  "phase": {
+    "rezervace": "Reservation",
+    "zpracovani": "Processing",
+    "finalizace": "Finalization",
+    "uschova": "Escrow",
+    "katastr": "Land Registry",
+    "vyplaceni": "Payout",
+    "dokonceni": "Completion"
+  },
+  "case": {
+    "title": "Legal Case",
+    "pripad": "Case",
+    "stav": "Current Status",
+    "new": "New Case"
+  },
+  "task": {
+    "title": "Task",
+    "ukol": "Task",
+    "odhad": "Estimate",
+    "realnyTime": "Actual Time",
+    "datum": "Date",
+    "urgent": "Urgent",
+    "lhuta": "Deadline",
+    "poznamka": "Note",
+    "new": "New Task",
+    "status": {
+      "pending": "Pending",
+      "in_progress": "In Progress",
+      "done": "Done"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "jmeno": "Name",
+    "typ": "Type",
+    "rc": "Birth Number",
+    "ico": "Company ID",
+    "adresa": "Address",
+    "telefon": "Phone",
+    "email": "Email",
+    "datovka": "Data Box",
+    "new": "New Contact"
+  },
+  "finance": {
+    "title": "Finance",
+    "incoming": "Incoming Payments",
+    "outgoing": "Outgoing Payments",
+    "amount": "Amount",
+    "date": "Date"
+  },
+  "escrow": {
+    "title": "Escrow",
+    "account": "Account",
+    "balance": "Balance"
+  },
+  "cadastral": {
+    "title": "Cadastral Proceedings",
+    "cisloRizeni": "Proceeding No.",
+    "stav": "Status",
+    "lhuta": "Deadline"
+  },
+  "attendance": {
+    "title": "Attendance",
+    "prichod": "Arrival",
+    "odchod": "Departure",
+    "hodiny": "Hours",
+    "mesicniHodiny": "Monthly Hours",
+    "sazba": "Rate",
+    "celkem": "Total"
+  },
+  "registry": {
+    "title": "Registry",
+    "ares": "ARES — Business Registry",
+    "ruian": "RUIAN — Address Points",
+    "katastr": "Land Registry"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "filter": "Filter",
+    "loading": "Loading...",
+    "noResults": "No results",
+    "confirm": "Confirm",
+    "back": "Back",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In"
+  }
+}

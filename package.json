@@ -1,0 +1,17 @@
+{
+  "name": "rels",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RELS — Real Estate Legal Solutions",
+  "scripts": {
+    "dev": "pnpm --filter app dev",
+    "build": "pnpm --filter app build",
+    "preview": "pnpm --filter app preview",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  }
+}

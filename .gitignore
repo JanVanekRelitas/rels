@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.output/
+.nuxt/
+
+# Firebase
+.firebase/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Data analysis (large binary files)
+data-analysis/PŘÍPADY.numbers/
+data-analysis/__MACOSX/
+data-analysis/index-data/
+data-analysis/csv-export/
