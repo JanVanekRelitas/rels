@@ -1,5 +1,12 @@
 <script setup lang="ts">
 const { t } = useI18n();
+const { logout } = useAuth();
+const router = useRouter();
+
+async function handleLogout() {
+  await logout();
+  router.push('/login');
+}
 
 const navigation = computed(() => [
   {
@@ -77,6 +84,14 @@ const navigation = computed(() => [
           :to="'/admin'"
           :label="t('nav.admin')"
           block
+        />
+        <UButton
+          icon="i-lucide-log-out"
+          variant="ghost"
+          color="neutral"
+          :label="t('auth.logout')"
+          block
+          @click="handleLogout"
         />
       </template>
     </UDashboardSidebar>

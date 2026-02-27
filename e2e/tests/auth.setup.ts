@@ -16,13 +16,15 @@ setup('authenticate as lawyer', async ({ page }) => {
     fs.mkdirSync(authDir, { recursive: true });
   }
 
-  await page.goto('/login');
-  await page.waitForLoadState('domcontentloaded');
+  await page.goto('/login', { waitUntil: 'networkidle' });
+  // Wait for Nuxt client-side hydration to complete
+  await page.waitForFunction(() => !!window.__NUXT__);
 
-  // Wait for inputs to be ready, then fill
+  // Fill inputs after hydration
   const emailInput = page.locator('input[type="email"]');
   await expect(emailInput).toBeVisible();
   await emailInput.fill(email);
+  await expect(emailInput).toHaveValue(email);
 
   const passwordInput = page.locator('input[type="password"]');
   await expect(passwordInput).toBeVisible();
