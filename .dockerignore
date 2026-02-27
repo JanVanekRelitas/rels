@@ -1,0 +1,10 @@
+node_modules
+.git
+.claude
+data-analysis
+*.md
+.env
+.output
+.nuxt
+dist
+.firebase
