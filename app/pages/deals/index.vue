@@ -37,7 +37,10 @@ const filteredDeals = computed(() => {
       </UDashboardNavbar>
     </template>
 
+    <UAlert v-if="dealsStore.error" color="error" icon="i-lucide-alert-triangle" :title="dealsStore.error" class="m-4" />
+
     <UTable
+      v-else
       :data="filteredDeals"
       :columns="[
         { accessorKey: 'spzn', header: t('deal.spzn') },

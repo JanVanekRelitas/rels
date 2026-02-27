@@ -19,7 +19,10 @@ onUnmounted(() => {
       <UDashboardNavbar :title="t('escrow.title')" />
     </template>
 
+    <UAlert v-if="escrowStore.error" color="error" icon="i-lucide-alert-triangle" :title="escrowStore.error" class="m-4" />
+
     <UTable
+      v-else
       :data="escrowStore.accounts"
       :columns="[
         { accessorKey: 'cisloUctu', header: t('escrow.account') },

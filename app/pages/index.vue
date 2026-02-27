@@ -39,6 +39,8 @@ const phases = ['rezervace', 'zpracovani', 'finalizace', 'uschova', 'katastr', '
       <UIcon name="i-lucide-loader-2" class="animate-spin h-8 w-8" />
     </div>
 
+    <UAlert v-else-if="dealsStore.error" color="error" icon="i-lucide-alert-triangle" :title="dealsStore.error" class="m-4" />
+
     <UTable
       v-else
       :data="dealsStore.deals"

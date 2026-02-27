@@ -37,7 +37,10 @@ const filteredContacts = computed(() => {
       </UDashboardNavbar>
     </template>
 
+    <UAlert v-if="contactsStore.error" color="error" icon="i-lucide-alert-triangle" :title="contactsStore.error" class="m-4" />
+
     <UTable
+      v-else
       :data="filteredContacts"
       :columns="[
         { accessorKey: 'jmeno', header: t('contact.jmeno') },

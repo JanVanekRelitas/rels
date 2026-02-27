@@ -33,7 +33,9 @@ const columns = [
       </UDashboardNavbar>
     </template>
 
-    <UTable :data="tasksStore.tasks" :columns="columns" :loading="tasksStore.loading">
+    <UAlert v-if="tasksStore.error" color="error" icon="i-lucide-alert-triangle" :title="tasksStore.error" class="m-4" />
+
+    <UTable v-else :data="tasksStore.tasks" :columns="columns" :loading="tasksStore.loading">
       <template #spzn-cell="{ row }">
         <NuxtLink :to="`/deals/${row.original.spzn}`" class="font-mono text-primary">
           {{ row.original.spzn }}
